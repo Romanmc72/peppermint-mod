@@ -10,4 +10,4 @@ main() {
     rm forge-mdk.zip
 }
 
-main
+main $@
