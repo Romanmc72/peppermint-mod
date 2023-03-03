@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PPP",
+    "P P",
+    "  P"
+  ],
+  "key": {
+    "P": {
+      "item": "tutorialmod:peppermint_block"
+    }
+  },
+  "result": {
+    "item": "tutorialmod:candy_cane"
+  }
+}

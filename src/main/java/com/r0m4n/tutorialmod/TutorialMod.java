@@ -1,8 +1,10 @@
 package com.r0m4n.tutorialmod;
 
 import com.mojang.logging.LogUtils;
+import com.r0m4n.tutorialmod.block.ModBlocks;
 import com.r0m4n.tutorialmod.item.ModItems;
 
+import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -25,6 +27,7 @@ public class TutorialMod {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
         modEventBus.addListener(this::addCreative);
@@ -37,8 +40,13 @@ public class TutorialMod {
     }
 
     private void addCreative(CreativeModeTabEvent.BuildContents event) {
-        if (event.getTab() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(ModItems.BUTTS);
+        CreativeModeTab tab = event.getTab();
+        if (tab == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ModItems.PEPPERMINT);
+        } else if (tab == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+            event.accept(ModItems.CANDY_CANE);
+        } else if (tab == CreativeModeTabs.REDSTONE_BLOCKS) {
+            event.accept(ModBlocks.PEPPERMINT_BLOCK);
         }
     }
 
