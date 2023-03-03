@@ -7,10 +7,10 @@
   ],
   "key": {
     "P": {
-      "item": "tutorialmod:peppermint"
+      "item": "peppermintmod:peppermint"
     }
   },
   "result": {
-    "item": "tutorialmod:peppermint_block"
+    "item": "peppermintmod:peppermint_block"
   }
 }

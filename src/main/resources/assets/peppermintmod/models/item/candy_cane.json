@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "tutorialmod:item/candy_cane"
+    "layer0": "peppermintmod:item/candy_cane"
   }
 }

@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "axis=x": { "model": "peppermintmod:block/peppermint_block_horizontal", "y": 90, "x": 90 },
+    "axis=z": { "model": "peppermintmod:block/peppermint_block_horizontal", "x": 90 },
+    "axis=y": { "model": "peppermintmod:block/peppermint_block" }
+  }
+}

@@ -1,8 +1,8 @@
-package com.r0m4n.tutorialmod;
+package com.r0m4n.peppermintmod;
 
 import com.mojang.logging.LogUtils;
-import com.r0m4n.tutorialmod.block.ModBlocks;
-import com.r0m4n.tutorialmod.item.ModItems;
+import com.r0m4n.peppermintmod.block.ModBlocks;
+import com.r0m4n.peppermintmod.item.ModItems;
 
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -17,13 +17,13 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
-@Mod(TutorialMod.MOD_ID)
-public class TutorialMod {
-    public static final String MOD_ID = "tutorialmod";
+@Mod(PeppermintMod.MOD_ID)
+public class PeppermintMod {
+    public static final String MOD_ID = "peppermintmod";
     private static final Logger LOGGER = LogUtils.getLogger();
 
-    public TutorialMod() {
-        LOGGER.debug("Initializing the mod '{}'...", TutorialMod.MOD_ID);
+    public PeppermintMod() {
+        LOGGER.debug("Initializing the mod '{}'...", PeppermintMod.MOD_ID);
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(modEventBus);
@@ -33,7 +33,7 @@ public class TutorialMod {
         modEventBus.addListener(this::addCreative);
 
         MinecraftForge.EVENT_BUS.register(this);
-        LOGGER.debug("The mod '{}' is initialized!", TutorialMod.MOD_ID);
+        LOGGER.debug("The mod '{}' is initialized!", PeppermintMod.MOD_ID);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {

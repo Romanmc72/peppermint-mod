@@ -1,9 +1,9 @@
-package com.r0m4n.tutorialmod.block;
+package com.r0m4n.peppermintmod.block;
 
 import java.util.function.Supplier;
 
-import com.r0m4n.tutorialmod.TutorialMod;
-import com.r0m4n.tutorialmod.item.ModItems;
+import com.r0m4n.peppermintmod.PeppermintMod;
+import com.r0m4n.peppermintmod.item.ModItems;
 
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -20,7 +20,7 @@ import net.minecraftforge.registries.RegistryObject;
 
 public class ModBlocks {
   public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(
-    ForgeRegistries.BLOCKS, TutorialMod.MOD_ID
+    ForgeRegistries.BLOCKS, PeppermintMod.MOD_ID
   );
 
   public static final RegistryObject<Block> PEPPERMINT_BLOCK = registerBlock(
@@ -32,7 +32,6 @@ public class ModBlocks {
         .of(Material.GLASS)
         .strength(2f)
         .sound(SoundType.AMETHYST)
-        .isRedstoneConductor(new ModStatePredicate())
     )
   );
 

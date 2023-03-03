@@ -1,6 +1,6 @@
-package com.r0m4n.tutorialmod.item;
+package com.r0m4n.peppermintmod.item;
 
-import com.r0m4n.tutorialmod.TutorialMod;
+import com.r0m4n.peppermintmod.PeppermintMod;
 
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.food.Foods;
@@ -14,7 +14,7 @@ import net.minecraftforge.registries.RegistryObject;
 public class ModItems {
   public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(
     ForgeRegistries.ITEMS,
-    TutorialMod.MOD_ID
+    PeppermintMod.MOD_ID
   );
 
   public static final RegistryObject<Item> PEPPERMINT = ITEMS.register(

@@ -1,4 +1,4 @@
-package com.r0m4n.tutorialmod.item;
+package com.r0m4n.peppermintmod.item;
 
 import net.minecraft.tags.BlockTags;
 import net.minecraft.world.item.crafting.Ingredient;

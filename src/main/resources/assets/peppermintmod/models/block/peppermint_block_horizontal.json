@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "peppermintmod:block/peppermint_block_top",
+    "side": "peppermintmod:block/peppermint_block_side"
+  }
+}
