@@ -1,6 +1,6 @@
-# Peppermint Mod ![candy cane](https://cdn.emojidex.com/emoji/seal/candy_cane.png "candy cane")
+# Peppermint Mod ![candy cane](./src/main/resources/assets/peppermintmod/textures/item/candy_cane.png)
 
-This is a Minecraft Forge Mod written in Java using the Forge MDK. All of the assets and code here are written by me but largely copied from online tutorials. Huge shout out to [Kaupenjoe on YouTube](https://www.youtube.com/channel/UCbzPhyLcO8VP25dZ7kaUyAw) as well as his samples saved in [GitHub](https://github.com/Tutorials-By-Kaupenjoe). Seriously, thank you.
+This is a [Minecraft](https://www.minecraft.net/en-us) Forge Mod written in [Java](https://www.java.com/en/) using the [Forge MDK](https://files.minecraftforge.net/net/minecraftforge/forge/). All of the assets and code here are written by me but largely copied from online tutorials. Huge shout out to [Kaupenjoe on YouTube](https://www.youtube.com/channel/UCbzPhyLcO8VP25dZ7kaUyAw) as well as his samples saved in [GitHub](https://github.com/Tutorials-By-Kaupenjoe). Seriously, thank you.
 
 I set this entire repo up using Visual Studio Code, so anything you see in here works for me on my machine. If you use Eclipse or IntelliJ then things might work a little differently for you.
 
