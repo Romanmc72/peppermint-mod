@@ -2,8 +2,6 @@ package com.r0m4n.peppermintmod.item;
 
 import com.r0m4n.peppermintmod.PeppermintMod;
 
-import net.minecraft.world.food.FoodProperties;
-import net.minecraft.world.food.Foods;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.SwordItem;
 import net.minecraftforge.eventbus.api.IEventBus;

@@ -4,11 +4,12 @@ import com.mojang.logging.LogUtils;
 import com.r0m4n.peppermintmod.block.ModBlocks;
 import com.r0m4n.peppermintmod.item.ModItems;
 
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.event.CreativeModeTabEvent;
+import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -39,8 +40,8 @@ public class PeppermintMod {
     private void commonSetup(final FMLCommonSetupEvent event) {
     }
 
-    private void addCreative(CreativeModeTabEvent.BuildContents event) {
-        CreativeModeTab tab = event.getTab();
+    private void addCreative(BuildCreativeModeTabContentsEvent event) {
+        ResourceKey<CreativeModeTab> tab = event.getTabKey();
         if (tab == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.PEPPERMINT);
         } else if (tab == CreativeModeTabs.TOOLS_AND_UTILITIES) {
